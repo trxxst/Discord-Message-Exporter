@@ -5,6 +5,14 @@ forum posts and DMs** you are allowed to read into a structured, **offline-reada
 archive: JSON for machines, HTML for humans, and a server-level `index.html` that links the whole
 backup together. Inside the app it is called **Discord Backup**.
 
+## Download
+
+Get the latest Windows build from the
+[Releases page](https://github.com/trxxst/Discord-Message-Exporter/releases/latest): the installer
+(`DiscordBackup-<version>-setup.exe`) or the portable `.exe` that runs without installing. The
+builds are not code-signed, so Windows SmartScreen may warn on first launch; choose **More info**
+and then **Run anyway**. Each release includes `SHA256SUMS.txt` to verify the download.
+
 ## Features
 
 - **Account manager**: add, rename, refresh and remove accounts. Tokens are encrypted at rest
