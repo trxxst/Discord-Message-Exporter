@@ -1,0 +1,22 @@
+appId: com.discordbackup.app
+productName: Discord Backup
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**/*
+  - package.json
+# Speeds up packaging and avoids native rebuild prompts.
+npmRebuild: false
+win:
+  target:
+    - target: nsis
+    - target: portable
+  artifactName: ${productName}-${version}-setup.${ext}
+portable:
+  artifactName: DiscordBackup-${version}-portable.exe
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  artifactName: ${productName}-${version}-setup.${ext}
